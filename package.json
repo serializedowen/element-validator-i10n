@@ -1,0 +1,23 @@
+{
+  "name": "@serializedowen/element-validator-polyfill",
+  "version": "1.0.0",
+  "description": "mandarin element-ui form-item localization polyfill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serializedowen/element-validator-i10n.git"
+  },
+  "keywords": [
+    "polyfill",
+    "i10n"
+  ],
+  "author": "serializedowen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serializedowen/element-validator-i10n/issues"
+  },
+  "homepage": "https://github.com/serializedowen/element-validator-i10n#readme"
+}
