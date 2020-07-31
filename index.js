@@ -20,6 +20,8 @@ FormItem.methods.validate = function validate(trigger, callback = noop) {
     return true;
   }
 
+  const name = this.label || this.prop;
+
   this.validateState = "validating";
 
   const descriptor = {};
@@ -28,12 +30,12 @@ FormItem.methods.validate = function validate(trigger, callback = noop) {
       delete rule.trigger;
     });
   }
-  descriptor[this.label] = rules;
+  descriptor[name] = rules;
 
   const validator = new av(descriptor);
   const model = {};
 
-  model[this.label] = this.fieldValue;
+  model[name] = this.fieldValue;
 
   validator.validate(model, { firstFields: true }, (errors, invalidFields) => {
     this.validateState = !errors ? "success" : "error";
