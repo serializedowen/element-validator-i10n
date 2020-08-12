@@ -1,5 +1,19 @@
 # element-validator-i10n
 
+# Installation
+```
+npm i -S @serializedowen/element-validator-polyfill
+```
+Or
+```
+yarn add @serializedowen/element-validator-polyfill
+```
+
+Then 
+```js
+import '@serializedowen/element-validator-polyfill'
+```
+in your entry of your file. 
 
 汉化element-ui的表单校验
 
